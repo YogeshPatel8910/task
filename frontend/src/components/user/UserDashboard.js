@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import StoreList from './StoreList';
 import StoreDetail from './StoreDetail';
+import Header from '../common/Header'
 
 const UserDashboard = () => {
   const [stores, setStores] = useState([]);
@@ -48,6 +49,7 @@ const UserDashboard = () => {
 
   return (
     <>
+    <Header/>
       <Container fluid className="mt-4">
         <Routes>
           <Route path="/" element={
